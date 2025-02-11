@@ -48,23 +48,61 @@
     />
 
     <style>
-      .responsive {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        max-width: 400px;
-        height: auto;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+        padding: 0 10%;
+      }
+
+      .header__logo {
+        display: flex;
+      }
+
+      .header__menu {
+        display: flex;
+      }
+
+      .header__menu li {
+        list-style-type: none;
+        margin-right: 20px;
+      }
+
+      .header__menu li a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .header__menu li a:hover {
+        color: blue;
       }
     </style>
   </head>
   <body>
-    <header>
-      <img src="" alt="" />
+    <header class="header">
+      <img
+        class="header__menu"
+        src="assets/logo.svg"
+        alt="createweb logo"
+        width="220"
+        height="50"
+      />
       <nav>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+        <ul class="header__menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
         </ul>
       </nav>
     </header>
