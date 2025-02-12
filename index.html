@@ -125,6 +125,56 @@
         background: #7273f1;
         color: #fff;
       }
+
+      .portofolio {
+        padding: 0 10%;
+        height: 60vh;
+        display: flex;
+        background-color: #fafafa;
+      }
+
+      .portofolio h2 {
+        margin-bottom: 20px;
+      }
+
+      .portofolio__image,
+      .portofolio__service {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10vh;
+      }
+
+      .portofolio__image img {
+        width: 80%;
+      }
+
+      .portofolio__service ol {
+        counter-reset: li;
+        list-style: none;
+      }
+
+      .portofolio__service ol li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .portofolio__service ol li:before {
+        content: counter(li);
+        counter-increment: li;
+        color: #fff;
+        background: #d9d9d9;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
     </style>
   </head>
   <body>
@@ -159,19 +209,24 @@
         </div>
       </section>
 
-      <section>
-        <section>
-          <h2></h2>
-          <img src="" alt="" />
+      <section id="portofolio" class="portofolio">
+        <section class="portofolio__image">
+          <h2>Portofolio</h2>
+          <img
+            src="assets/portfolio-1.svg"
+            alt="portofolio"
+            width="400"
+            height="250"
+          />
         </section>
-        <section>
-          <h2></h2>
+        <section class="portofolio__service">
+          <h2>Jenis Layanan</h2>
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Website profile perusahaan</li>
+            <li>Toko online</li>
+            <li>Sistem informasi</li>
+            <li>Blog</li>
+            <li>Mobile web</li>
           </ol>
         </section>
       </section>
