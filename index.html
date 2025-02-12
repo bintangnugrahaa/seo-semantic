@@ -4,52 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Jasa pembuatan website terbaik dan terpercaya | CREATEWEB</title>
-    <meta
-      name="description"
-      content="Gunakan jasa pembuatan website kami! Gratis Hosting & Domain 1 
-    tahun hanya 500.000an. Profil perusahaan, toko online, sistem informasi, blog dan lain-lain"
+    
+    <title>Top-Rated & Trusted Website Development Services | CREATEWEB</title>
+    <meta 
+      name="description" 
+      content="Leverage our expert website development services! Enjoy free hosting & domain for one year at just IDR 500,000. Company profiles, e-commerce, information systems, blogs, and more." 
     />
-
-    <link
-      rel="canonical"
-      hreflang="id"
-      href="http://createweb.com/index.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="http://createweb.com/english.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="id-my"
-      href="http://createweb.com/indonesia-malaysia.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="http://createweb.com/index.html"
-    />
-
-    <meta
-      property="og:title"
-      content="Jasa pembuatan website terbaik dan terpercaya"
-    />
+    
+    <link rel="canonical" hreflang="id" href="http://createweb.com/index.html" />
+    <link rel="alternate" hreflang="en" href="http://createweb.com/english.html" />
+    <link rel="alternate" hreflang="id-my" href="http://createweb.com/indonesia-malaysia.html" />
+    <link rel="alternate" hreflang="x-default" href="http://createweb.com/index.html" />
+    
+    <meta property="og:title" content="Top-Rated & Trusted Website Development Services" />
     <meta property="og:url" content="http://createweb.com/index.html" />
-    <meta
-      property="og:description"
-      content="Gunakan jasa pembuatan website kami! Gratis Hosting & Domain 1 tahun hanya 500.000an. Profil perusahaan, toko online, sistem informasi, blog dan lain-lain"
+    <meta 
+      property="og:description" 
+      content="Leverage our expert website development services! Enjoy free hosting & domain for one year at just IDR 500,000. Company profiles, e-commerce, information systems, blogs, and more." 
     />
-    <meta
-      property="og:image"
-      content="https://buildwithangga.com/storage/assets/thumbnails/Thumbnail%20FWD.png"
-    />
+    <meta property="og:image" content="https://buildwithangga.com/storage/assets/thumbnails/Thumbnail%20FWD.png" />
+    
     <style>
       * {
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
       }
       body {
         box-sizing: border-box;
@@ -112,17 +91,17 @@
         background: #7273f1;
         color: #fff;
       }
-      .portofolio {
+      .portfolio {
         padding: 0 10%;
         height: 60vh;
         display: flex;
         background-color: #fafafa;
       }
-      .portofolio h2 {
+      .portfolio h2 {
         margin-bottom: 20px;
       }
-      .portofolio__image,
-      .portofolio__service {
+      .portfolio__image,
+      .portfolio__services {
         display: flex;
         flex-basis: 50%;
         flex-direction: column;
@@ -130,19 +109,19 @@
         align-items: center;
         margin-top: 10vh;
       }
-      .portofolio__image img {
+      .portfolio__image img {
         width: 80%;
       }
-      .portofolio__service ol {
+      .portfolio__services ol {
         counter-reset: li;
         list-style: none;
       }
-      .portofolio__service ol li {
+      .portfolio__services ol li {
         display: flex;
         align-items: center;
         margin-bottom: 5px;
       }
-      .portofolio__service ol li:before {
+      .portfolio__services ol li:before {
         content: counter(li);
         counter-increment: li;
         color: #000;
@@ -155,30 +134,30 @@
         align-items: center;
         margin-right: 20px;
       }
-      .testimoni {
+      .testimonials {
         padding: 0 10%;
-        height: 80vh;
+        height: 85vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
-      .testimoni__title {
+      .testimonials__title {
         margin-bottom: 20px;
       }
-      .testimoni__list {
+      .testimonials__list {
         display: flex;
       }
-      .testimoni__1 {
+      .testimonials__1 {
         background-color: rgba(96, 114, 226, 0.128196);
       }
-      .testimoni__2 {
+      .testimonials__2 {
         background-color: rgb(152, 43, 190, 0.128196);
       }
-      .testimoni__3 {
+      .testimonials__3 {
         background-color: rgba(226, 98, 98, 0.128196);
       }
-      .testimoni article {
+      .testimonials article {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -189,11 +168,11 @@
         max-width: 280px;
         margin: 0 20px;
       }
-      .testimoni__profile {
+      .testimonials__profile {
         display: flex;
         align-items: center;
       }
-      .testimoni__profile img {
+      .testimonials__profile img {
         margin-right: 20px;
       }
       footer {
@@ -205,139 +184,119 @@
         border-top: 1px solid #bcd0e5;
         padding: 20px 0;
       }
+      @media (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+        .header {
+            flex-direction: column;
+            height: 0;
+            margin: 30px 0;
+        }
+        .header__logo {
+            margin-bottom: 20px;
+        }
+        .portfolio {
+            flex-direction: column;
+            height: 100%;
+        }
+        .testimonials {
+            height: 80vh;
+        }
+        .testimonials__list {
+            flex-direction: column;
+        }
+        .testimonials article {
+            margin-bottom: 20px;
+        }
+        footer {
+          flex-direction: column;
+        }
+    }
     </style>
   </head>
   <body>
     <header class="header">
-      <img
-        class="header__logo"
-        src="assets/logo.svg"
-        alt="createweb logo"
-        width="220"
-        height="50"
-      />
+      <img class="header__logo" src="assets/logo.svg" alt="CreateWeb Logo" width="220" height="50" />
       <nav>
         <ul class="header__menu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#portofolio">Portofolio & Layanan</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#portfolio">Portfolio & Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
         </ul>
       </nav>
     </header>
-
+  
     <main>
       <section class="intro" id="intro">
         <div class="intro__content">
-          <h1 class="intro__title">
-            JASA PEMBUATAN WEBSITE MURAH, TERBAIK & TERPERCAYA - CREATEWEB
-          </h1>
-          <p class="intro__desc">
-            Kalian ingin buat website murah cepan dan terpercaya? Percayakan
-            lepada kami CREATEWEB
-          </p>
-          <button class="intro__cta">Kontak Kami</button>
+          <h1 class="intro__title">AFFORDABLE, TOP-QUALITY & TRUSTED WEBSITE DEVELOPMENT - CREATEWEB</h1>
+          <p class="intro__desc">Looking for a cost-effective, fast, and reliable website? Trust CREATEWEB to deliver excellence.</p>
+          <button class="intro__cta">Contact Us</button>
         </div>
       </section>
-
-      <section id="portofolio" class="portofolio">
-        <section class="portofolio__image">
-          <h2>Portofolio</h2>
-          <img
-            src="assets/portfolio-1.svg"
-            alt="portofolio"
-            width="400"
-            height="250"
-          />
-        </section>
-        <section class="portofolio__service">
-          <h2>Jenis Layanan</h2>
+  
+      <section id="portfolio" class="portfolio">
+        <div class="portfolio__image">
+          <h2>Portfolio</h2>
+          <img src="assets/portfolio-1.svg" alt="Portfolio" width="400" height="250" />
+        </div>
+        <div class="portfolio__services">
+          <h2>Service Types</h2>
           <ol>
-            <li>Website profile perusahaan</li>
-            <li>Toko online</li>
-            <li>Sistem informasi</li>
+            <li>Corporate Profile Website</li>
+            <li>Online Store</li>
+            <li>Information System</li>
             <li>Blog</li>
-            <li>Mobile web</li>
+            <li>Mobile Web</li>
           </ol>
-        </section>
+        </div>
       </section>
-
-      <section id="testimoni" class="testimoni">
-        <h2 class="testimoni__title">Testimoni</h2>
-        <div class="testimoni__list">
-          <article class="testimoni__1">
-            <p>
-              Layanan pembuatan website sangat profesional dan sesuai dengan
-              ekspektasi saya. Hasilnya responsif, estetis, dan fungsional.
-            </p>
-            <div class="testimoni__profile">
-              <img
-                src="assets/profile-1.svg"
-                alt="profile"
-                height="65"
-                width="65"
-              />
+  
+      <section id="testimonials" class="testimonials">
+        <h2 class="testimonials__title">Testimonials</h2>
+        <div class="testimonials__list">
+          <article class="testimonials__1">
+            <p>Professional website development services that exceeded my expectations. The result is responsive, aesthetic, and highly functional.</p>
+            <div class="testimonials__profile">
+              <img src="assets/profile-1.svg" alt="Profile" width="65" height="65" />
               <div>
                 <h3>Elon Musk</h3>
-                CEO, SpaceX
+                <span>CEO, SpaceX</span>
               </div>
             </div>
           </article>
-          <article class="testimoni__2">
-            <p>
-              Tim sangat komunikatif dan mampu menerjemahkan kebutuhan bisnis
-              saya ke dalam sebuah website yang modern dan user-friendly.
-            </p>
-            <div class="testimoni__profile">
-              <img
-                src="assets/profile-2.svg"
-                alt="profile"
-                height="65"
-                width="65"
-              />
+          <article class="testimonials__2">
+            <p>The team is highly communicative and successfully translated my business needs into a modern, user-friendly website.</p>
+            <div class="testimonials__profile">
+              <img src="assets/profile-2.svg" alt="Profile" width="65" height="65" />
               <div>
                 <h3>Sundar Pichai</h3>
-                CEO, Google
+                <span>CEO, Google</span>
               </div>
             </div>
           </article>
-          <article class="testimoni__3">
-            <p>
-              Proses pengerjaan cepat dan hasilnya memuaskan. Website yang
-              dibuat memiliki performa yang optimal dan mudah dikelola.
-            </p>
-            <div class="testimoni__profile">
-              <img
-                src="assets/profile-3.svg"
-                alt="profile"
-                height="65"
-                width="65"
-              />
+          <article class="testimonials__3">
+            <p>Fast execution with satisfying results. The website is well-optimized and easy to manage.</p>
+            <div class="testimonials__profile">
+              <img src="assets/profile-3.svg" alt="Profile" width="65" height="65" />
               <div>
                 <h3>Mark Zuckerberg</h3>
-                CEO, Meta
+                <span>CEO, Meta</span>
               </div>
             </div>
           </article>
         </div>
       </section>
     </main>
-
+  
     <footer>
-      <img
-        class="footer__logo"
-        src="assets/logo.svg"
-        alt="createweb logo"
-        width="220"
-        height="50"
-      />
+      <img class="footer__logo" src="assets/logo.svg" alt="CreateWeb Logo" width="220" height="50" />
       <p id="copyright"></p>
     </footer>
-
+  
     <script>
-      const year = new Date().getFullYear();
-      document.getElementById(
-        "copyright"
-      ).innerHTML = `&copy; ${year} CreateWeb. All rights reserved`;
-    </script>
+      document.querySelector("#copyright").textContent = `© ${new Date().getFullYear()} CreateWeb. All rights reserved.`;
+</script>
   </body>
 </html>
