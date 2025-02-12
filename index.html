@@ -196,12 +196,21 @@
       .testimoni__profile img {
         margin-right: 20px;
       }
+      footer {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #bcd0e5;
+        padding: 20px 0;
+      }
     </style>
   </head>
   <body>
     <header class="header">
       <img
-        class="header__menu"
+        class="header__logo"
         src="assets/logo.svg"
         alt="createweb logo"
         width="220"
@@ -314,8 +323,21 @@
     </main>
 
     <footer>
-      <img src="" alt="" />
-      <p></p>
+      <img
+        class="footer__logo"
+        src="assets/logo.svg"
+        alt="createweb logo"
+        width="220"
+        height="50"
+      />
+      <p id="copyright"></p>
     </footer>
+
+    <script>
+      const year = new Date().getFullYear();
+      document.getElementById(
+        "copyright"
+      ).innerHTML = `&copy; ${year} CreateWeb. All rights reserved`;
+    </script>
   </body>
 </html>
