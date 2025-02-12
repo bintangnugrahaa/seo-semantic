@@ -87,6 +87,44 @@
       .header__menu li a:hover {
         color: blue;
       }
+
+      .intro {
+        width: 80%;
+        margin: 0 auto;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-image: url(assets/pattern.svg);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 60%;
+      }
+
+      .intro__title {
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+
+      .intro__desc {
+        color: #5b5b5b;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .intro__content {
+        width: 50%;
+      }
+
+      .intro__cta {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        background: #7273f1;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
@@ -101,17 +139,24 @@
       <nav>
         <ul class="header__menu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#portofolio">Portofolio & Layanan</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1></h1>
-        <p></p>
-        <button></button>
+      <section class="intro" id="intro">
+        <div class="intro__content">
+          <h1 class="intro__title">
+            JASA PEMBUATAN WEBSITE MURAH, TERBAIK & TERPERCAYA - CREATEWEB
+          </h1>
+          <p class="intro__desc">
+            Kalian ingin buat website murah cepan dan terpercaya? Percayakan
+            lepada kami CREATEWEB
+          </p>
+          <button class="intro__cta">Kontak Kami</button>
+        </div>
       </section>
 
       <section>
